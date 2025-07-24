@@ -1,6 +1,6 @@
 # DevExtreme React Next.js Template
 
-The DevExtreme Next.js Template is a Next.js application with a navigation menu and sample views in a responsive layout. This application is created with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and uses [DevExtreme React components](https://js.devexpress.com/Documentation/Guide/React_Components/DevExtreme_React_Components/).
+The DevExtreme Next.js Template is a React application with a navigation menu and sample views in a responsive layout. This application is created with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and uses [DevExtreme React components](https://js.devexpress.com/Documentation/Guide/React_Components/DevExtreme_React_Components/).
 
 ![DevExtreme-Nextjs-Template](nextjs-template.png)
 
