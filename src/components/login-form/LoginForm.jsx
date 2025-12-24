@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Form, {
@@ -8,7 +8,7 @@ import Form, {
   ButtonItem,
   ButtonOptions,
   RequiredRule,
-  EmailRule
+  EmailRule,
 } from 'devextreme-react/form';
 import LoadIndicator from 'devextreme-react/load-indicator';
 import Button from 'devextreme-react/button';
@@ -20,11 +20,22 @@ import './LoginForm.scss';
 export default function LoginForm() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const formData = useRef({ email: '', password: '' });
+  const [formData, setFormData] = useState({ email: '', password: '' });
+
+  const onFieldDataChanged = useCallback((e) => {
+    const { dataField, value } = e;
+
+    if (dataField) {
+      setFormData(formData => ({
+        ...formData,
+        [dataField]: value,
+      }));
+    }
+  }, []);
 
   const onSubmit = useCallback(async (e) => {
     e.preventDefault();
-    const { email, password } = formData.current;
+    const { email, password } = formData;
     setLoading(true);
 
     const result = await signIn(email, password);
@@ -34,7 +45,7 @@ export default function LoginForm() {
     } else {
       router.push('/');
     }
-  }, [router]);
+  }, [router, formData]);
 
   const onCreateAccountClick = useCallback(() => {
     router.push('/auth/create-account');
@@ -42,7 +53,7 @@ export default function LoginForm() {
 
   return (
     <form className={'login-form'} onSubmit={onSubmit}>
-      <Form formData={formData.current} disabled={loading}>
+      <Form formData={formData} disabled={loading} onFieldDataChanged={onFieldDataChanged}>
         <Item
           dataField={'email'}
           editorType={'dxTextBox'}

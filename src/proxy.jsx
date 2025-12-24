@@ -18,7 +18,7 @@ async function redirectUnauthorized(req) {
   // return NextResponse.redirect(new URL('/auth/login', req.nextUrl))
 }
 
-export default async function middleware(req) {
+export default async function proxy(req) {
   const path = req.nextUrl.pathname;
 
   if (!isProtectedRoute(path)) {
