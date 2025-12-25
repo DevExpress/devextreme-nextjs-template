@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import Form, {
   Item,
@@ -17,11 +17,22 @@ import { changePassword } from '@/app/actions/auth';
 export default function ChangePasswordForm() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const formData = useRef({ password: '' });
+  const [formData, setFormData] = useState({ password: '' });
+
+  const onFieldDataChanged = useCallback((e) => {
+    const { dataField, value } = e;
+
+    if (dataField) {
+      setFormData(formData => ({
+        ...formData,
+        [dataField]: value,
+      }));
+    }
+  }, []);
 
   const onSubmit = useCallback(async (e) => {
   e.preventDefault();
-  const { password } = formData.current;
+  const { password } = formData;
   setLoading(true);
 
   const result = await changePassword(password);
@@ -32,16 +43,16 @@ export default function ChangePasswordForm() {
   } else {
     notify(result.message, 'error', 2000);
   }
-}, [router]);
+}, [router, formData]);
 
 const confirmPassword = useCallback(
-  ({ value }) => value === formData.current.password,
-  []
+  ({ value }) => value === formData.password,
+  [formData]
 );
 
 return (
   <form onSubmit={onSubmit}>
-    <Form formData={formData.current} disabled={loading}>
+    <Form formData={formData} disabled={loading} onFieldDataChanged={onFieldDataChanged}>
       <Item
         dataField={'password'}
         editorType={'dxTextBox'}
