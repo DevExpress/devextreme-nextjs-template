@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  inferno: true
+  sharp: true
+  unrs-resolver: true
