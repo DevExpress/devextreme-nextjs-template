@@ -14,11 +14,11 @@ importers:
   .:
     dependencies:
       devextreme:
-        specifier: 25.2.3
-        version: 25.2.3
+        specifier: 25.2.9
+        version: 25.2.9
       devextreme-react:
         specifier: 25.2.3
-        version: 25.2.3(devextreme@25.2.3)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 25.2.3(devextreme@25.2.9)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       jose:
         specifier: 6.1.3
         version: 6.1.3
@@ -121,8 +121,8 @@ packages:
   '@bufbuild/protobuf@1.10.1':
     resolution: {integrity: sha512-wJ8ReQbHxsAfXhrf9ixl0aYbZorRuOWpBNzm8pL8ftmSxQx/wnJD5Eg861NwJU/czy2VXFIebCeZnZrI9rktIQ==}
 
-  '@devexpress/utils@1.4.8':
-    resolution: {integrity: sha512-XVqyeYjqWjbcAUOxaUc6f93MATuVyFE2eec10Qm7X3/QLkKPBh2cJt5OOw4bkW4fC8SG8NZwjVITt08Tr+CXpQ==}
+  '@devexpress/utils@2.1.2':
+    resolution: {integrity: sha512-QC5x5x5pKTqAG+HViELW9JkZ/xxi0Qok+LqMfxZ+m+MGnb9/T/3dUfmaW6x4c6N44TSlSWnoQmSL+teqnT3Dkw==}
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -943,19 +943,19 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  devexpress-diagram@2.2.24:
-    resolution: {integrity: sha512-PD3mW50OFS44PnqUq2ywJHYDeNFWCIPhXCeLHkzg2BEdDufGGpW73Ux5z3F9NtW91sP0qNE1f1PrsR+3CIN0jA==}
+  devexpress-diagram@2.2.29:
+    resolution: {integrity: sha512-6QS1zKP736QlIU6lMeZdq52Fe85BSa6vh1TwDIxSAKNwT6gHnGKm5paI71epRJ9H6GC4SLtv/zhlH8QCjwNnXQ==}
 
-  devexpress-gantt@4.1.64:
-    resolution: {integrity: sha512-q9+diTugmzf3YNzQ4Xutr7ndgCAdpH7IyjTzGy2SiY5I+ePf2BaAZ0R3LGADBC5TuFS2OamIhF0HOj4ALgkf+A==}
+  devexpress-gantt@4.1.69:
+    resolution: {integrity: sha512-UPrVT/U7voNRYLP1Kk5DEM7OB7WT2XwDiJi6zzAZOqhFu6sCuAViwth+WVQ7HmgWDNIyCxc/+cB13qq1p244lg==}
 
   devextreme-cli@1.13.0:
     resolution: {integrity: sha512-ME9yvSyfFy9I4XmaP0VLNW3vGCFab/rD7RsuYobA4TajSzFOB71acvaurLWFm6WujEM/j0OmZnxy6G/vClV1dw==}
     engines: {node: '>20.19.0', npm: '>9.6.0', yarn: '>1.21'}
     hasBin: true
 
-  devextreme-quill@1.7.7:
-    resolution: {integrity: sha512-tRAdHOxGGTb5TSX2o4v7nTsXe567tdyipbehF28h2OH6pJNNLzCjWw5JAd2UHMbh6VG0bg+3xshsn9DJwX4P0Q==}
+  devextreme-quill@1.7.10:
+    resolution: {integrity: sha512-AsbMuYAON87Xk77bY4wjjtniONrgQe/WV7LSFxdU58z+bBn0gCkH3hZOJorSwfotThcwRLb150oTJ2ABJcO6DQ==}
 
   devextreme-react@25.2.3:
     resolution: {integrity: sha512-uHd4t81CesJiDqqTH5h5EB7JcLLgyhPgzMk4v2ecbFDtERXktQhaKFpvEJBmqLa9/MhTGqj8JmZ9ti9f9Baflw==}
@@ -969,8 +969,8 @@ packages:
     peerDependencies:
       bootstrap: ^5.3.8
 
-  devextreme@25.2.3:
-    resolution: {integrity: sha512-g4SawI5lVKnzIHmlxEUKjUmghDPloNmFFV8olq3/RJfo36YBkYixvjehbM5nwtXW6ftHlCMmjWE6eU9SNw96RA==}
+  devextreme@25.2.9:
+    resolution: {integrity: sha512-JB7HzmOZfSKkMOAUcEFbKZl5zgxaP8k34D9YSI2AViea+nauyS5u2JRwxQt7pakUN7IoUzwV5xGj0Bg9rkHrrA==}
     hasBin: true
 
   doctrine@2.1.0:
@@ -2129,6 +2129,39 @@ packages:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
     engines: {node: '>= 0.4'}
 
+  unplugin@3.3.0:
+    resolution: {integrity: sha512-qa66K+crbfyE6JK10GjvbJeRrOsuC/JpbnHctfyp/i4oBTxWOzJfRZyDiOk1PtErMFRu8JhsU/wPvOdBNWe5Rg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      '@farmfe/core': '*'
+      '@rspack/core': '*'
+      bun-types-no-globals: '*'
+      esbuild: '*'
+      rolldown: '*'
+      rollup: '*'
+      unloader: '*'
+      vite: '*'
+      webpack: '*'
+    peerDependenciesMeta:
+      '@farmfe/core':
+        optional: true
+      '@rspack/core':
+        optional: true
+      bun-types-no-globals:
+        optional: true
+      esbuild:
+        optional: true
+      rolldown:
+        optional: true
+      rollup:
+        optional: true
+      unloader:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+
   unrs-resolver@1.11.1:
     resolution: {integrity: sha512-bSjt9pjaEBnNiGgc9rUiHGKv5l4/TGzDmYw3RhnkJGtLhbnnA/5qJj7x3dNDCRx/PJxu774LlH8lCOlB4hEfKg==}
 
@@ -2146,6 +2179,9 @@ packages:
 
   varint@6.0.0:
     resolution: {integrity: sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==}
+
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
   which-boxed-primitive@1.1.1:
     resolution: {integrity: sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==}
@@ -2294,7 +2330,7 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.1': {}
 
-  '@devexpress/utils@1.4.8':
+  '@devexpress/utils@2.1.2':
     dependencies:
       tslib: 2.3.1
 
@@ -3027,14 +3063,14 @@ snapshots:
   detect-libc@2.1.2:
     optional: true
 
-  devexpress-diagram@2.2.24:
+  devexpress-diagram@2.2.29:
     dependencies:
-      '@devexpress/utils': 1.4.8
+      '@devexpress/utils': 2.1.2
       es6-object-assign: 1.1.0
 
-  devexpress-gantt@4.1.64:
+  devexpress-gantt@4.1.69:
     dependencies:
-      '@devexpress/utils': 1.4.8
+      '@devexpress/utils': 2.1.2
       tslib: 2.3.1
 
   devextreme-cli@1.13.0:
@@ -3049,7 +3085,7 @@ snapshots:
       semver: 5.7.2
       strip-bom: 4.0.0
 
-  devextreme-quill@1.7.7:
+  devextreme-quill@1.7.10:
     dependencies:
       core-js: 3.49.0
       eventemitter3: 4.0.7
@@ -3058,9 +3094,9 @@ snapshots:
       parchment: 2.0.1
       quill-delta: 5.1.0
 
-  devextreme-react@25.2.3(devextreme@25.2.3)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  devextreme-react@25.2.3(devextreme@25.2.9)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      devextreme: 25.2.3
+      devextreme: 25.2.9
       prop-types: 15.8.1
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
@@ -3073,18 +3109,29 @@ snapshots:
       postcss: 8.5.23
       sass-embedded: 1.66.0
 
-  devextreme@25.2.3:
+  devextreme@25.2.9:
     dependencies:
       '@babel/runtime': 7.29.2
       '@preact/signals-core': 1.14.1
-      devexpress-diagram: 2.2.24
-      devexpress-gantt: 4.1.64
-      devextreme-quill: 1.7.7
+      devexpress-diagram: 2.2.29
+      devexpress-gantt: 4.1.69
+      devextreme-quill: 1.7.10
       inferno: 8.2.3
       inferno-create-element: 8.2.3
       inferno-hydrate: 8.2.3
       jszip: 3.10.1
       rrule: 2.8.1
+      unplugin: 3.3.0
+    transitivePeerDependencies:
+      - '@farmfe/core'
+      - '@rspack/core'
+      - bun-types-no-globals
+      - esbuild
+      - rolldown
+      - rollup
+      - unloader
+      - vite
+      - webpack
 
   doctrine@2.1.0:
     dependencies:
@@ -4453,6 +4500,12 @@ snapshots:
       has-symbols: 1.1.0
       which-boxed-primitive: 1.1.1
 
+  unplugin@3.3.0:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      picomatch: 4.0.5
+      webpack-virtual-modules: 0.6.2
+
   unrs-resolver@1.11.1:
     dependencies:
       napi-postinstall: 0.3.4
@@ -4490,6 +4543,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   varint@6.0.0: {}
+
+  webpack-virtual-modules@0.6.2: {}
 
   which-boxed-primitive@1.1.1:
     dependencies:
