@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "devextreme-cli": "1.13.0",
-    "devextreme-themebuilder": "25.2.3",
+    "devextreme-themebuilder": "25.2.9",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.2.11"
   }
