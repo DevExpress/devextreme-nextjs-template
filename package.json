@@ -26,6 +26,6 @@
     "devextreme-cli": "1.17.0",
     "devextreme-themebuilder": "26.1.4",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^16.3.3"
+    "eslint-config-next": "^16.3.8"
   }
 }
