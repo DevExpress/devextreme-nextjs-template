@@ -15,8 +15,8 @@
     "postinstall": "pnpm run build-themes"
   },
   "dependencies": {
-    "devextreme": "26.1.4",
-    "devextreme-react": "26.1.4",
+    "devextreme": "26.1.6",
+    "devextreme-react": "26.1.6",
     "jose": "6.1.3",
     "next": "^16.4.0",
     "react": "19.2.3",
